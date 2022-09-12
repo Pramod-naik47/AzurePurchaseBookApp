@@ -39,7 +39,7 @@ namespace PurchaseBookApp
             string responseMessage = default;
             try
             {
-                if (data != null)
+                if (payment != null)
                 {
                     _digitalBookManagementContext.Payments.Add(payment);
                     _digitalBookManagementContext.SaveChanges();
